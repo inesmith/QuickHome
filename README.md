@@ -24,7 +24,7 @@
     QuickHome is an online real estate platform that allows registered users to buy or rent properties and registered agencies to publish listings, providing a comprehensive and user-friendly experience for property sales and searches.
    <br />
    <br />
-   <a href="">View Demo</a>
+   <a href="Demonstration Video.mov">View Demo</a>
     ·
     <a href="https://github.com/inesmith/QuickHome/issues">Report Bug</a>
     ·

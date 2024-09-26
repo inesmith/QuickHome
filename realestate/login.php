@@ -82,7 +82,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <div class="right-side">
-            <h1 class="BrandName">Brand Name</h1>
+            <h1 class="BrandName">QuickHome Real Estate</h1>
             <form action="login.php" method="post">
 
                 <label for="username">Username</label>
