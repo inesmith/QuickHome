@@ -1,0 +1,292 @@
+/* General Body Styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 1440px;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2c2c3e;
+  padding: 10px 20px;
+  color: white;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-image {
+  height: 50px;
+  width: auto;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+/* Navbar Links */
+.navbar-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  flex-grow: 1;
+}
+
+.navbar-links li {
+  margin: 0 15px;
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  transition: color 0.3s;
+}
+
+.navbar-links a.active {
+  color: #8ec546;
+}
+
+.navbar-links a:hover {
+  color: #8ec546;
+}
+
+.navbar-links a i {
+  margin-right: 5px;
+}
+
+/* Navbar User Button */
+.navbar-user {
+  display: flex;
+  align-items: center;
+}
+
+.btn-user {
+  background-color: transparent;
+  color: #8ec546;
+  border: 2px solid #8ec546;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-user i {
+  margin-left: 10px;
+}
+
+.btn-user:hover,
+.btn-user:focus {
+  background-color: #8ec546;
+  color: white;
+  border-color: #8ec546;
+}
+
+/* Login and Sign Up Pages */
+.container {
+  display: flex;
+  width: 80%;
+  max-width: 1200px;
+  height: 80vh;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.left-side {
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #262739;
+  overflow: hidden;
+}
+
+.left-side svg {
+  width: 100%;
+  height: auto;
+}
+
+.right-side {
+  width: 65%;
+  background-color: #ffffff;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.BrandName {
+  margin-bottom: 30px;
+}
+
+form {
+  width: 100%;
+}
+
+/* Input and Select Field Styling */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #8ec546;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+  appearance: none; /* Removes default styling from select in most browsers */
+  background-color: white;
+}
+
+/* Adjusts the padding and removes default arrow from the select */
+select {
+  padding-right: 30px; /* Extra padding to make room for custom arrow */
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24"><path fill="gray" d="M7 10l5 5 5-5H7z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 10px top 50%;
+  background-size: 12px;
+}
+
+/* Show Password Toggle */
+.show-password {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.show-password label {
+  margin-left: 5px;
+  color: #2c2c3e;
+}
+
+/* Sign Up and Login Button Styling */
+.sign-up-btn,
+.login-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #8ec546;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.sign-up-btn:hover,
+.login-btn:hover {
+  background-color: #76b03f;
+}
+
+.login-link,
+.signup-link {
+  margin-top: 20px;
+  color: #2c2c3e;
+}
+
+.login-link a,
+.signup-link a {
+  color: #8ec546;
+  text-decoration: none;
+}
+
+.login-link a:hover,
+.signup-link a:hover {
+  text-decoration: underline;
+}
+
+/* Pop-up Card Styling */
+.popup-card {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  text-align: center;
+  z-index: 1000;
+  display: none;
+}
+
+.popup-content p {
+  font-size: 10px;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.popup-content button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: white;
+  background-color: #8ec546;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.popup-content button:hover {
+  background-color: #76b03f;
+}
+
+/* Additional Styles for Filter Options */
+.search-filter-bar {
+  background-color: #2c2c3e;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.filter-bar-inner {
+  display: flex;
+  width: 80%;
+}
+
+.search-input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+
+.search-button {
+  background-color: #8ec546;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  color: white;
+}
